@@ -1,4 +1,4 @@
-keyb = '`1234567890-=QWERTYUIOP[]\\ASDFGHJKL;\'ZXCVBNM,./'
+keyb = '`1234567890-=__QWERTYUIOP[]\\__ASDFGHJKL;\'__ZXCVBNM,./'
 while True:
     try:
         frase = input()
