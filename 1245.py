@@ -1,12 +1,23 @@
-n= int(input())
-lista=[]
-for i in range (0,n):
-    c=0
-    pe= input().split()
-    lista.append(pe)
-    for j in range (i,-1,-1):
-        if lista[j][0].count(pe[0])==1:
-            if lista[j][1].count(pe[1])!=1:
-                c+=1
-                lista.remove(lista[i])
-                lista.remove(lista[j])
+listat=[]
+listap=[]
+while True:
+    try:
+        n= int(input())
+        c=0
+        for i in range (0,n):
+            var= input().split()
+            listat.append(var[0])
+            listap.append(var[1])
+
+        for j in range (0,len(listat)):
+            for k in range (0,len(listat)):
+                if listat[j] == listat[k] and listap[j] != listap[k]:
+                    c+=1
+                    listat[j]=''
+                    listat[k]=''
+                    
+        print(c)
+        listat=listat.clear()
+        listap=listap.clear()
+    except EOFError:
+        break
