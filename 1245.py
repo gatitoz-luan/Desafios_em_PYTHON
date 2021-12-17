@@ -15,9 +15,9 @@ while True:
                     c+=1
                     listat[j]=''
                     listat[k]=''
-                    
+                
         print(c)
-        listat=listat.clear()
-        listap=listap.clear()
+        listat.clear()
+        listap.clear()
     except EOFError:
         break
