@@ -1,8 +1,10 @@
 while True:
     try:
-        a= str(input())
+        a= str(input("Que horas são? "))
+        #a= str(input())  reativar e apagar linha acima
         hora= int(a[0]+a[1])
         min= int(a[3]+a[4])
+        print('Em seu relógio de conversão binária está da seguinte forma:') #apagar pra pôr no uri
         print(" ____________________________________________")
         print("|                                            |")
         print("|    ____________________________________    |_")
