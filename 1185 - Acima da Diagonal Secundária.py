@@ -7,7 +7,7 @@ for c in range(12):
     lin = lin - 1
     for j in range(12):
         valor = float(input())
-        if j > lin:
+        if j < lin:
             soma = soma + valor
             qde = qde + 1
 
