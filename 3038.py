@@ -1,23 +1,11 @@
-while True:
+while True:        
     try:
-
-        palavra = input().split()
-
-        for i in range(0, len(palavra)):
-            for j in range(len(palavra[i])):
-                if palavra[i][j]=='!':
-                    print('i', end='')
-                elif palavra[i][j]=='@':
-                    print('a', end='')
-                elif palavra[i][j]=='*':
-                    print('o', end='')
-                elif palavra[i][j]=='#':
-                    print('u', end='')
-                elif palavra[i][j]=='&':
-                    print('e', end='')
-                else:
-                    print(palavra[i][j], end='')
-            print(" ", end='')
-        print('',end='\n')
-    except EOFError:
+        F = input() #LÊ O VETOR
+        a = F.replace("@", "a") #TROCAR o @ pelo a
+        b = a.replace("&", "e") #TROCAR o & pelo e
+        c = b.replace("!", "i") #TROCAR o ! pelo i
+        d = c.replace("*", "o") #TROCAR o * pelo o
+        e = d.replace("#", "u") #TROCAR o # pelo u
+        print(e) #resposta descodificada  
+    except EOFError:        #caso fim de testes, encerra o programa
         break

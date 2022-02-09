@@ -1,25 +1,29 @@
 while True:
-    N,M=map(int,input().split())
-    lista=[]
-    maior=menor=media=c=0
-    c+=1
-
-    if N==0 or 0==M:
+    n, m =  input().split()
+    n = int(n)
+    m = int(m)
+    temperatura=[]
+    if n == m == 0:
         break
+    maior = menor = soma = teste= 0    
+    
+    for i in range(m):
+        temperatura.append(int(input()))
+        soma += int(temperatura[i])
+        
+    for j in range (n):
+        x = soma//m
+        teste +=1
+        temperatura = int(input())
+        soma1 = temperatura[j]
+        soma2 = temperatura [j - (int(m))]
+        soma += (soma1) - (soma2)
+        if (soma > maior):
+            maior = (soma/m)
+        if (soma < menor):
+            menor = (soma/m)
 
-    for i in range(N):
-        lista.append(int(input()))
-    
-    for j in range(0,len(lista)-M+1):
-        for k in range (M):
-            media=+lista[(j+k)]
-        media=media/M
-        if media>maior:
-            maior=media
-        if media < menor:
-            menor=media
-        media=0
-    
-    print(f"Teste {c}")
-    print(f'{menor} {maior}')
+    print(f"Teste {teste}")
+    print(f"{maior} {menor}")
     print()
+    
