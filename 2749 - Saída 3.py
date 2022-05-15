@@ -1,7 +1,0 @@
-print('-'*39)
-print('|{:<37}|'.format('x = 35'))
-print('|'+' '*37 + '|')
-print('|{:^37}|'.format('x = 35'))
-print('|'+' '*37 + '|')
-print('|{:>37}|'.format('x = 35'))
-print('-'*39)
